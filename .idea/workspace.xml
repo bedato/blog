@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="05c7158e-d150-4793-a662-31d5a11d918d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Exceptions/APIResponseException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/MerchantsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/SearchMerchantRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Resources/MerchantResource.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Resources/MerchantResourcesCollection.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Infrastructure/Requests/JsonRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Infrastructure/Resources/WithApiWrapping.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Infrastructure/Resources/WithDataFormatters.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Merchant.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Repositories/Merchant/MerchantsRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Repositories/Merchant/MerchantsRepositoryInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_29_180257_create_merchants_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeders/MerchantsTableSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,18 +143,27 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1m7DrmMsOujEniM3QXHAhSC5WXY" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Infrastructure/Requests" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -161,7 +182,7 @@
       <workItem from="1608835940782" duration="648000" />
       <workItem from="1608836633479" duration="1809000" />
       <workItem from="1608938440060" duration="548000" />
-      <workItem from="1609257607618" duration="963000" />
+      <workItem from="1609257607618" duration="3509000" />
     </task>
     <servers />
   </component>
@@ -179,5 +200,8 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
