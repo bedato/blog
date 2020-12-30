@@ -1,35 +1,28 @@
 <?php
 
-declare(strict_types=1);
-
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use Illuminate\Support\Facades\Date;
+use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class User extends Model
+class Merchant extends Authenticatable
 {
     use SoftDeletes;
 
-    protected $table = 'users';
-
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array
-     */
     protected $fillable = [
-        'merchant_id',
-        'user_code',
-        'username',
-        'password',
         'email',
+        'password',
+        'api_token',
         'created_at',
         'updated_at'
     ];
 
-    protected $hidden = ['password', 'remember_token', 'merchant_id'];
+    protected $table = 'merchants';
+
+    protected $dates = ['deleted_at'];
+
+    protected $hidden = ['password', 'remember_token'];
 
     public function getAuthIdentifier()
     {
@@ -39,9 +32,6 @@ class User extends Model
     {
         return $this->password;
     }
-
-    protected $dates = ['created_at', 'updated_at', 'deleted_at'];
-
 
     /**
      * Modify date format.
@@ -72,7 +62,7 @@ class User extends Model
      *
      * @param string $value - attribute value to be casted
      *
-     * @return Date | void
+     * @return Date| null|false|string
      */
     public function getDeletedAtAttribute($value = null)
     {
