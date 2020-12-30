@@ -1,15 +1,18 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Models;
 
-use Illuminate\Contracts\Auth\MustVerifyEmail;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Notifications\Notifiable;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Support\Facades\Date;
 
-class User extends Authenticatable
+class User extends Model
 {
-    use HasFactory, Notifiable;
+    use SoftDeletes;
+
+    protected $table = 'users';
 
     /**
      * The attributes that are mass assignable.
@@ -17,27 +20,66 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name',
+        'merchant_id',
+        'user_code',
+        'username',
+        'password',
         'email',
-        'password',
+        'created_at',
+        'updated_at'
     ];
 
-    /**
-     * The attributes that should be hidden for arrays.
-     *
-     * @var array
-     */
-    protected $hidden = [
-        'password',
-        'remember_token',
-    ];
+    protected $hidden = ['password', 'remember_token', 'merchant_id'];
+
+    public function getAuthIdentifier()
+    {
+        return $this->getKey();
+    }
+    public function getAuthPassword()
+    {
+        return $this->password;
+    }
+
+    protected $dates = ['created_at', 'updated_at', 'deleted_at'];
+
 
     /**
-     * The attributes that should be cast to native types.
+     * Modify date format.
      *
-     * @var array
+     * @param string $value - attribute value to be casted
+     *
+     * @return Date
      */
-    protected $casts = [
-        'email_verified_at' => 'datetime',
-    ];
+    public function getCreatedAtAttribute($value): string
+    {
+        return date('Y-m-d H:i:s', strtotime($value));
+    }
+
+    /**
+     * Modify date format.
+     *
+     * @param string $value - attribute value to be casted
+     *
+     * @return Date
+     */
+    public function getUpdatedAtAttribute($value): string
+    {
+        return date('Y-m-d H:i:s', strtotime($value));
+    }
+
+    /**
+     * Modify date format.
+     *
+     * @param string $value - attribute value to be casted
+     *
+     * @return Date | void
+     */
+    public function getDeletedAtAttribute($value = null)
+    {
+        if (!$value) {
+            return null;
+        }
+
+        return date('Y-m-d H:i:s', strtotime($value));
+    }
 }

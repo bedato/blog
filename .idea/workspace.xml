@@ -5,20 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="05c7158e-d150-4793-a662-31d5a11d918d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Exceptions/APIResponseException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/MerchantsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/SearchMerchantRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/MerchantResource.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/MerchantResourcesCollection.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Infrastructure/Requests/JsonRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Infrastructure/Resources/WithApiWrapping.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Infrastructure/Resources/WithDataFormatters.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Merchant.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repositories/Merchant/MerchantsRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Repositories/Merchant/MerchantsRepositoryInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_29_180257_create_merchants_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeders/MerchantsTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/LoginController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/CreateUserRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/LoginRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/SearchUserRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Resources/UserResource.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Resources/UserResourcesCollection.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Repositories/User/UsersRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Repositories/User/UsersRepositoryInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeders/UsersTableSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_29_180257_create_merchants_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2013_12_29_180257_create_merchants_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +186,7 @@
       <workItem from="1608835940782" duration="648000" />
       <workItem from="1608836633479" duration="1809000" />
       <workItem from="1608938440060" duration="548000" />
-      <workItem from="1609257607618" duration="3509000" />
+      <workItem from="1609257607618" duration="11481000" />
     </task>
     <servers />
   </component>
