@@ -3,6 +3,8 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use App\Repositories\Post\PostsRepository;
+use App\Repositories\Post\PostsRepositoryInterface;
 use App\Repositories\Merchant\MerchantsRepository;
 use App\Repositories\Merchant\MerchantsRepositoryInterface;
 use App\Repositories\User\UsersRepositoryInterface;
@@ -25,6 +27,11 @@ class AppServiceProvider extends ServiceProvider
         $this->app->bind(
             UsersRepositoryInterface::class,
             UsersRepository::class
+        );
+
+        $this->app->bind(
+            PostsRepositoryInterface::class,
+            PostsRepository::class
         );
     }
 
