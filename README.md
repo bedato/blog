@@ -1,7 +1,7 @@
 # Blog RESTful API
 
 ## Summary
-My approach to create a RESTful API with Laravel with the repository pattern. __This is not a finished product. This is only to showcase my approach to a scalable Laravel RESTful API which i used in places i worked with Laravel.__
+My approach to create a RESTful API with Laravel with the repository pattern. __This is not a finished product. This is only to showcase my approach/coding style to a scalable Laravel RESTful API which i used in places i worked with Laravel.__
 
 ## Setup and Requirements
 **Required Laravel Sail installation (https://laravel.com/docs/8.x/sail#installation). Docker is required.**
@@ -10,7 +10,7 @@ My approach to create a RESTful API with Laravel with the repository pattern. __
 - Check App by accessing localhost in your browser
 - Enter container with `docker exec -it blog_laravel.test_1 bash`
 - Migrate and Seed Database with the artisan command `php artisan db:migrate --seed`
-- Access Database from the credentials in the .env file (if you don't have the .env file contact me please)
+- Access Database from the credentials in the .env file
 
 ## Access /posts endpoint
 
