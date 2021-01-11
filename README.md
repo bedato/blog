@@ -15,14 +15,16 @@ My approach to create a RESTful API with Laravel with the repository pattern. __
 ## Access /posts endpoint
 
 Endpoints:
-    * `/posts` (Available Requests: GET, POST, DELETE)
+    
+    -`/posts` (Available Requests: GET, POST, DELETE)
 
 Request Headers: 
-    * `X-Request-Timestamp` -> `{{timestamp}}`
-    * `X-Access-Token` -> get it from the database from table `merchants` -> `api_token`
+    
+    -`X-Request-Timestamp` -> `{{timestamp}}`
+    - `X-Access-Token` -> get it from the database from table `merchants` -> `api_token`
     
 HTTP Request
-    * `GET` URL: `localhost/posts`
+    + `GET` URL: `localhost/posts`
     
 Response:
 ```json
@@ -84,12 +86,14 @@ Response:
 -----------------------------------------------
 
 Request Headers: 
-    * `X-Request-Timestamp` -> `{{timestamp}}`
-    * `X-Access-Token` -> get it from the database from table `merchants` -> `api_token`
-    * `X-User-Code` -> get it from the database from table `users` -> `user_code`
+
+    - `X-Request-Timestamp` -> `{{timestamp}}`
+    - `X-Access-Token` -> get it from the database from table `merchants` -> `api_token`
+    - `X-User-Code` -> get it from the database from table `users` -> `user_code`
     
 HTTP Request
-    * `POST localhost/posts`
+
+    - `POST localhost/posts`
     
 Body
     `{
@@ -107,12 +111,14 @@ Response: `Post created successfully`
 -----------------------------------------------
 
 Request Headers: 
-    * `X-Request-Timestamp` -> `{{timestamp}}`
-    * `X-Access-Token` -> get it from the database from table `merchants` -> `api_token`
-    * `X-User-Code` -> get it from the database from table `users` -> `user_code`
+
+    - `X-Request-Timestamp` -> `{{timestamp}}`
+    - `X-Access-Token` -> get it from the database from table `merchants` -> `api_token`
+    - `X-User-Code` -> get it from the database from table `users` -> `user_code`
     
 HTTP Request
-    * `DELETE localhost/posts/{id}`
+
+    - `DELETE localhost/posts/{id}`
 
 Response: `Post Deleted Successfully`
 
