@@ -25,7 +25,7 @@ HTTP Request
     - `GET` URL: `localhost/posts`
     
 Response:
-
+```json
 `{
     "data": [
         {
@@ -79,7 +79,7 @@ Response:
     "errors": {},
     "duration": 0.09195780754089355
 }`
-
+```
 
 -----------------------------------------------
 
