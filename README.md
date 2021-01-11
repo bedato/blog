@@ -96,6 +96,8 @@ HTTP Request
     - `POST localhost/posts`
     
 Body
+
+    ```json
     `{
     "author": "John",
     "title": "this",
@@ -104,6 +106,7 @@ Body
     "image_url": "asdfasd.jpg",
     "is_featured": false
     }`
+    ```
     
 Response: `Post created successfully`
 
